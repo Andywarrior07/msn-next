@@ -1,0 +1,45 @@
+.chat-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 3rem;
+
+  &__avatar {
+    & > img {
+      border-radius: 50px;
+    }
+  }
+
+  &__details {
+    display: grid;
+    grid-template-rows: 3rem 3rem;
+    grid-template-columns: 1fr min-content;
+    width: 100%;
+  }
+
+  &__username {
+    font-size: 1.35rem;
+    font-weight: bold;
+    align-self: center;
+  }
+
+  &__last-message {
+    width: 100%;
+    grid-row: 2 / 3;
+    align-self: center;
+    font-size: 1.2rem;
+    color: var(--color-grey-dark-1);
+  }
+
+  &__lastMessageDate,
+  &__notification {
+    font-size: 1.2rem;
+    justify-self: end;
+  }
+}
+
+.is-active {
+  background-color: var(--color-grey-light-1);
+}

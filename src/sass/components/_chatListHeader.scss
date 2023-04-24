@@ -1,0 +1,33 @@
+.chat-list-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 7rem;
+  width: 100%;
+  border-right: 1px solid var(--color-grey-light-3);
+  border-bottom: 1px solid var(--color-grey-light-3);
+  padding: 2rem 3rem;
+
+  &__title {
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__action {
+    &--search {
+    }
+
+    &--new {
+    }
+  }
+}

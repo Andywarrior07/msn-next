@@ -1,0 +1,33 @@
+.message-header {
+  display: flex;
+  align-items: center;
+  height: 7rem;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-grey-light-3);
+  padding: 2rem 3rem;
+
+  &__avatar {
+    margin-right: 1rem;
+
+    & > img {
+      border-radius: 50px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__username {
+    font-size: 1.35rem;
+    font-weight: bold;
+    align-self: center;
+  }
+
+  &__status {
+    font-size: 1.3rem;
+    color: var(--color-grey-dark-1);
+  }
+}

@@ -1,0 +1,30 @@
+.message-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 7rem;
+  background-color: #fff;
+  padding: 0 2rem;
+
+  &__input {
+    flex: 1;
+    height: 5rem;
+    border-style: none;
+    border-radius: 20px 0 0 20px;
+    padding: 1rem;
+    background-color: var(--color-grey-light-1);
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__send {
+    height: 5rem;
+    border-style: none;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--color-grey-light-1);
+    padding-right: 2rem;
+    cursor: pointer;
+  }
+}
